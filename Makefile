@@ -22,8 +22,10 @@ composer:
 	@docker-compose exec app composer install
 .PHONY: composer
 
+PROJECT_NAME ?= $(shell bash -c 'read -p "Name of your project: " project; echo $$project')
+
 laravel-init:
-	@docker-compose exec app composer create-project laravel/laravel name-of-the-project
+	@docker-compose exec app composer create-project laravel/laravel $(PROJECT_NAME)
 .PHONY: laravel-init
 
 node-init: nvm-install npm-install
