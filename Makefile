@@ -22,6 +22,10 @@ composer:
 	@docker-compose exec app composer install
 .PHONY: composer
 
+key:
+	@docker-compose exec app php artisan key:generate
+.PHONY:key
+
 PROJECT_NAME ?= $(shell bash -c 'read -p "Name of your project: " project; echo $$project')
 
 laravel-init:
