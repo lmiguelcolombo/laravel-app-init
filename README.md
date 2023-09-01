@@ -28,9 +28,14 @@ features: [Git](https://git-scm.com), [Docker](https://www.docker.com/), [Node](
 ### Step-by-step
 
 ```zsh
-$ git clone git@github.com:lmiguelcolombo/laravel-docker-app-init.git
+  $ git clone git@github.com:lmiguelcolombo/laravel-docker-app-init.git
 
-$ cd laravel-docker-app-init
+  $ cd laravel-docker-app-init
+```
+
+Then, you're going to access the `docker-compose.yml` file and replace the `xxxxx` with the name of your project. After that, run the following commands:
+
+```zsh
 $ make laravel-init
 $ make init
 ```
