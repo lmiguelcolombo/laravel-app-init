@@ -35,7 +35,7 @@ laravel-init:
 	@docker-compose exec app composer create-project laravel/laravel $(PROJECT_NAME)
 .PHONY: laravel-init
 
-node-init: nvm-install npm-install
+node-init: nvm-install npm-install run-dev
 .PHONY: node-init
 
 npm-install: 
@@ -46,3 +46,7 @@ nvm-install:
 	@nvm install 18.16
 	@nvm use 18.16
 .PHONY:nvm-install
+
+run-dev:
+	@npm run dev
+.PHONY: run-dev
