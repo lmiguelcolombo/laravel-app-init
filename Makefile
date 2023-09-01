@@ -1,3 +1,6 @@
+init: build up composer key node-init
+.PHONY: init
+
 build:
 	@docker-compose build
 .PHONY: build
