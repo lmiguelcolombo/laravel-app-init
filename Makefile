@@ -1,3 +1,7 @@
+# Variables
+PROJECT_NAME ?= $(shell bash -c 'read -p "Name of your project: " project; echo $$project')
+
+# Functions
 init: build up composer key node-init
 .PHONY: init
 
@@ -28,8 +32,6 @@ composer:
 key:
 	@docker-compose exec app php artisan key:generate
 .PHONY:key
-
-PROJECT_NAME ?= $(shell bash -c 'read -p "Name of your project: " project; echo $$project')
 
 laravel-init:
 	@docker-compose exec app composer create-project laravel/laravel $(PROJECT_NAME)
