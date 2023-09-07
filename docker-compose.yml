@@ -46,6 +46,6 @@ services:
     networks:
       - net_xxxxx
 
-  networks:
-    net_xxxxx:
-      driver: bridge
+networks:
+  net_xxxxx:
+    driver: bridge
