@@ -47,15 +47,18 @@ $ gh repo clone lmiguelcolombo/laravel-docker-app-init
 
 <br>
 
+Then, rename the directory and enter on it
+
 ```zsh
-$ cd laravel-docker-app-init
+$ mv laravel-docker-app-init name-of-your-directoy
+$ cd name-of-your-directoy
 ```
 
 Then, you're going to access the `docker-compose.yml` file and replace the `xxxxx` with the name of your project. After that, run the following commands:
 
 ```zsh
-$ make laravel-init
 $ make init
+$ make laravel-init
 ```
 
 Open your browser and visit https://localhost:8000 to access your [Laravel](https://laravel.com) application running!
