@@ -47,11 +47,11 @@ $ gh repo clone lmiguelcolombo/laravel-docker-app-init
 
 <br>
 
-Then, rename the directory and enter on it
+Then, rename the directory and enter on it:
 
 ```zsh
-$ mv laravel-docker-app-init name-of-your-directoy
-$ cd name-of-your-directoy
+$ mv laravel-docker-app-init name-of-your-project
+$ cd name-of-your-project
 ```
 
 Then, you're going to access the `docker-compose.yml` file and replace the `xxxxx` with the name of your project. After that, run the following commands:
@@ -59,6 +59,21 @@ Then, you're going to access the `docker-compose.yml` file and replace the `xxxx
 ```zsh
 $ make init
 $ make laravel-init
+```
+
+After this, the Laravel project will be inside a folder, you could move all the files and folders to the root project and run:
+
+```zsh
+$ make init
+```
+
+Then, run this commands:
+
+```zsh
+$ nvm install 18.16
+$ nvm use 18.16
+$ npm install
+$ npm run dev
 ```
 
 Open your browser and visit https://localhost:8000 to access your [Laravel](https://laravel.com) application running!
