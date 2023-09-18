@@ -1,91 +1,66 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-<img alt="Static Badge" src="https://img.shields.io/badge/node-v18.13.0-green">
-<img alt="Static Badge" src="https://img.shields.io/badge/npm-v8.19.0-green">
-<img alt="Static Badge" src="https://img.shields.io/badge/php-v8.1.11-blue?logo=php">
-<img alt="Static Badge" src="https://img.shields.io/badge/laravel-v10.0-color?logo=laravel&color=%23fe2d1f">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## 🔖 About
+## About Laravel
 
-This is a github repository with files used to start a [Laravel](https://laravel.com) project using [Docker](https://www.docker.com/).
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## 💻 Technologies
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-- [Docker](https://www.docker.com/)
-- [Laravel](https://laravel.com/)
-- [PHP](https://www.php.net)
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## 📦 Installation
+## Learning Laravel
 
-### Requirements
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-Before you get started, you'll need to have installed the following
-features: [Git](https://git-scm.com), [Docker](https://www.docker.com/), [Node](https://nodejs.org), [Make](https://www.gnu.org/software/make/#download).
-<br>
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-### Step-by-step
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-- Via SSH
+## Laravel Sponsors
 
-```zsh
-$ git clone git@github.com:lmiguelcolombo/laravel-docker-app-init.git
-```
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-- Via HTTPS
+### Premium Partners
 
-```zsh
-$ git clone git@github.com:lmiguelcolombo/laravel-docker-app-init.git
-```
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-- Via [Github CLI](https://cli.github.com/)
+## Contributing
 
-```zsh
-$ gh repo clone lmiguelcolombo/laravel-docker-app-init
-```
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-<br>
+## Code of Conduct
 
-Then, rename the directory and enter on it:
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-```zsh
-$ mv laravel-docker-app-init name-of-your-project
-$ cd name-of-your-project
-```
+## Security Vulnerabilities
 
-Then, you're going to access the `docker-compose.yml` file and replace the `xxxxx` with the name of your project. After that, run the following commands:
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-```zsh
-$ make init
-$ make laravel-init
-```
+## License
 
-After this, the Laravel project will be inside a folder, you could move all the files and folders to the root project and run:
-
-```zsh
-$ make init
-```
-
-Then, run this commands:
-
-```zsh
-$ nvm install 18.16
-$ nvm use 18.16
-$ npm install
-$ npm run dev
-```
-
-Open your browser and visit https://localhost:8000 to access your [Laravel](https://laravel.com) application running!
-
-Then, just code and coffee! 🧑‍💻 ☕️
-
-#### Make scripts
-
-- `make stop` will stop (not kill) the docker container. When you'll want to return soon and continue to coding, use it.
-
-- `make start` start (again) the containers stopped by the command above. The advantage of using `start` and `stop` is that you don't need to wait all the docker container to build up again.
-
-- `make down` will kill the docker container.
-
-- `make up` will build up the docker container again.
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
