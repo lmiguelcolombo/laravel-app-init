@@ -1,8 +1,8 @@
 FROM php:8.1.11-fpm
 
-LABEL author="Your Name or Organization Name"
-LABEL github="your-github-account"
-LABEL email="your-email@gmail.com"
+LABEL author="Luis Miguel Colombo"
+LABEL github="lmiguelcolombo"
+LABEL email="lmiguelcolombo@gmail.com"
 
 # Arguments defined in docker-compose.yml
 ARG user
